@@ -9,5 +9,6 @@ for item in items:
             if int(item) + int(item2) + int(item3) == 2020:
                 result = int(item) * int(item2) * int(item3)
                 break
-print(result)
-# 13891280
+    items.remove(item)
+
+assert(result == 13891280)

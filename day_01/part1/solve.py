@@ -8,5 +8,9 @@ for item in items:
         if int(item) + int(item2) == 2020:
             result = int(item) * int(item2)
             break
+        items.remove(item2)
+    items.remove(item)
 print(result)
-# result = 1013211
+
+
+assert(result == 1013211)
