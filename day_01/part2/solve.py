@@ -3,6 +3,7 @@ from builtins import int
 with open('input') as f:
     items = f.read().splitlines()
 
+
 for item in items:
     for item2 in items:
         for item3 in items:
@@ -10,5 +11,4 @@ for item in items:
                 result = int(item) * int(item2) * int(item3)
                 break
     items.remove(item)
-
-assert(result == 13891280)
+print(result)

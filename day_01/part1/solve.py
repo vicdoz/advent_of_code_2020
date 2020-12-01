@@ -12,5 +12,3 @@ for item in items:
     items.remove(item)
 print(result)
 
-
-assert(result == 1013211)
